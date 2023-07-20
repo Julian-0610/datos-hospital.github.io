@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Doctores</h1>
+        <form id="doctorForm">
+            <label for="doctorName">Nombre:</label>
+            <input type="text" id="doctorName" required>
+
+            <label for="doctorLastName">Apellido:</label>
+            <input type="text" id="doctorLastName" required>
+
+            <label for="doctorID">Número de Cédula:</label>
+            <input type="text" id="doctorID" required>
+
+            <label for="specialty">Especialidad:</label>
+            <select id="specialty" required>
+                <option value="">Seleccione una especialidad</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="dermatología">Dermatología</option>
+                <option value="rehabilitación-física">Rehabilitación física</option>
+                <option value="psicología">Psicología</option>
+                <option value="odontología">Odontología</option>
+                <option value="radiología">Radiología</option>
+     
+            </select>
+
+            <label for="office">Consultorio:</label>
+            <input type="text" id="office" required>
+
+            <label for="doctorEmail">Correo de contacto:</label>
+            <input type="email" id="doctorEmail" required>
+
+            <button type="submit">Guardar</button>
+        </form>
+
+        <h1>Formulario de Pacientes</h1>
+        <form id="patientForm">
+            <label for="patientName">Nombre:</label>
+            <input type="text" id="patientName" required>
+
+            <label for="patientLastName">Apellido:</label>
+            <input type="text" id="patientLastName" required>
+
+            <label for="patientID">Número de Cédula:</label>
+            <input type="text" id="patientID" required>
+
+            <label for="patientAge">Edad:</label>
+            <input type="number" id="patientAge" required>
+
+            <label for="patientPhone">Teléfono:</label>
+            <input type="tel" id="patientPhone" required>
+
+            <label for="patientSpecialty">Especialidad requerida:</label>
+            <select id="patientSpecialty" required>
+                <option value="">Seleccione una especialidad</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="medicina-interna">Medicina Interna</option>
+                <option value="dermatología">Dermatología</option>
+                <option value="rehabilitación-física">Rehabilitación física</option>
+                <option value="psicología">Psicología</option>
+                <option value="odontología">Odontología</option>
+                <option value="radiología">Radiología</option>
+      
+            </select>
+
+            <button type="submit">Guardar</button>
+        </form>
+
+        <h1>Listado de Pacientes</h1>
+        <div id="patientList"></div>
+
+        <h1>Listado de Doctores</h1>
+        <div id="doctorList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
